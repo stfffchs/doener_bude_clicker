@@ -4,12 +4,18 @@ let item2 = document.getElementById("item2")
 let item3 = document.getElementById("item3")
 let counter = document.getElementById("counter")
 let budgetcounter = document.getElementById("budgetcounter")
+let budgetcounter2 = document.getElementById("budgetcounter")
 
 let points = 0;
 let budget = 0;
 
 let budgetcount = function() {
     budget = budget + 10;
+    budgetcounter.innerHTML = budget;
+}
+
+let budgetcount2 = function() {
+    budget = budget + 11;
     budgetcounter.innerHTML = budget;
 }
 
@@ -46,7 +52,11 @@ let doenerclick = function(e){
 
 let minus200 = function(e){
     budget = budget - 200;
+    budgetcounter.innerHTML = budget;
+    
+    {
     budgetcounter.innerHTML = budget;  
+    }  
 }
 
 let minus300 = function(e){
@@ -67,6 +77,7 @@ item.addEventListener("click", minus200);
 item2.addEventListener("click", minus300);
 item3.addEventListener("click", minus400);
 doener.addEventListener("click", budgetcount);
+doener.addEventListener("click", budgetcount2);
 
 /* 
 if(budget === 200) {
