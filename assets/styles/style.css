@@ -1,4 +1,4 @@
-#doener, #item{
+#doener, #item, #item2, #item3{
     height: 200px;
     width: 200px;
     background-color: #bbb;
@@ -7,6 +7,14 @@
 
 #item {
     background-color: red !important;
+}
+
+#item2 {
+    background-color: green !important;
+}
+
+#item3 {
+    background-color: orange !important;
 }
 
 .hidden {
