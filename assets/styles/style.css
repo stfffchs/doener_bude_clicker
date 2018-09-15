@@ -23,13 +23,21 @@ h1 { text-align: center;
 #doener {
     height: 200px;
     width: 200px;
-    background-color: #bbb;
-    border-radius: 50%;
     margin: 0 auto;
     margin-top: 50px;
 }
 
-#item, #item2, #item3{
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.doener_img {
+height: 200px;
+width: 200px;
+}
+
+#item, #item2, #item3 {
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -54,7 +62,7 @@ h1 { text-align: center;
 }
 
 body {
-    background-color: aqua;
+    background-color: lightskyblue;
 }
 
 .abstand {
@@ -63,4 +71,11 @@ body {
 
 .center {
     margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    bottom:0;
 }
