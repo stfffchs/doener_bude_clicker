@@ -52,11 +52,13 @@ let minus200 = function(e){
 let minus300 = function(e){
     budget = budget - 300;
     budgetcounter.innerHTML = budget;
+    budgetprice = 13
 }
 
 let minus400 = function(e){
     budget = budget - 400;
     budgetcounter.innerHTML = budget;
+    budgetprice = 15
 }
 
 
