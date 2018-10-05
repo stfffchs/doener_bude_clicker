@@ -19,6 +19,11 @@ h1 { text-align: center;
     text-align: center;
 }
 
+#price {
+    font-size: 18px;
+    text-align: center;
+}
+
 
 #doener {
     height: 200px;
@@ -37,7 +42,7 @@ height: 200px;
 width: 200px;
 }
 
-#item, #item2, #item3 {
+#item, #item2, #item3, #item4 {
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -46,7 +51,7 @@ width: 200px;
 }
 
 #item {
-    background-color: red !important;
+    background-color: bisque !important;
 }
 
 #item2 {
@@ -54,7 +59,11 @@ width: 200px;
 }
 
 #item3 {
-    background-color: orange !important;
+    background-color: darkslategrey !important;
+}
+
+#item4 {
+    background-color: lightyellow !important;
 }
 
 .hidden {
