@@ -46,19 +46,19 @@ let doenerclick = function(e){
 let minus200 = function(e){
     budget = budget - 200;
     budgetcounter.innerHTML = budget;
-    budgetprice = 11
+    budgetprice = budgetprice + 1
 }
 
 let minus300 = function(e){
     budget = budget - 300;
     budgetcounter.innerHTML = budget;
-    budgetprice = 13
+    budgetprice = budgetprice + 3
 }
 
 let minus400 = function(e){
     budget = budget - 400;
     budgetcounter.innerHTML = budget;
-    budgetprice = 15
+    budgetprice = budgetprice + 5
 }
 
 
