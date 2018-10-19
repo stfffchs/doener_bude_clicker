@@ -3,6 +3,7 @@
 }
 
 body {font-family: 'Luckiest Guy';
+    color: white;
 }
 
 h1 { text-align: center;
@@ -78,6 +79,7 @@ body {
     margin-top: 20px;
 }
 
+
 .center {
     margin: 0 auto;
 }
@@ -86,5 +88,21 @@ body {
     display: flex;
     width: 100vw;
     position: fixed;
-    bottom:0;
+    bottom:0;s
+}
+
+.background_board {
+    background: url(../img/board.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 400px;
+    height: 291px;
+    margin: 0 auto;
+}
+
+.inner_padding {
+    padding: 25px;
 }

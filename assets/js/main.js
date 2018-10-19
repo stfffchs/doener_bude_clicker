@@ -13,7 +13,7 @@ let points = 0;
 let budget = 0;
 
 let budgetcount = function() {
-    budget = budget + budgetprice;
+    budget = Math.ceil((budget + budgetprice) * 100)/100
     budgetcounter.innerHTML = budget;
     price.innerHTML = budgetprice;
 }
@@ -58,7 +58,7 @@ let doenerclick = function(e){
 let minus200 = function(e){
     budget = budget - 200;
     budgetcounter.innerHTML = budget;
-    budgetprice = budgetprice + 1
+    budgetprice = budgetprice + 0.3
     price.innerHTML = budgetprice;
 }
 
