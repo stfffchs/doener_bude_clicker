@@ -10,6 +10,17 @@ h1 { text-align: center;
     font-size: 28px;
 }
 
+p { text-align: center;
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: white;
+}
+
+h2 { text-align: center;
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto';
+}
 #budgetcounter {
     font-size: 18px;
     text-align: center;
@@ -41,34 +52,27 @@ img {
 .doener_img {
 height: 200px;
 width: 200px;
+border-radius: 50%;
+animation: shadow-pulse 1s infinite;
 }
 
 #item, #item2, #item3, #item4 {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
+    height: 120px;
+    width: 120px;
     float: left;
     margin: 10px;
 }
 
-#item {
-    background-color: bisque !important;
-}
-
-#item2 {
-    background-color: green !important;
-}
-
-#item3 {
-    background-color: darkslategrey !important;
-}
-
-#item4 {
-    background-color: lightyellow !important;
+.locked {
+    height: 120px;
+    width: 120px;
+    float: left;
+    margin: 10px;
+    z-index: -1;
 }
 
 .hidden {
-    display: none;    
+    display: none;
 }
 
 body {
@@ -105,4 +109,78 @@ body {
 
 .inner_padding {
     padding: 25px;
+}
+
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.wrapper
+{ 
+  padding: 20px;     
+} 
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes shadow-pulse-big
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
+  }
 }

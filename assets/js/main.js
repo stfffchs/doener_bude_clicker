@@ -21,11 +21,11 @@ let budgetcount = function() {
 let doenerclick = function(e){
         points = points + 1;
         counter.innerHTML = points;
-        if(budget >= 190) {
+        if(budget >= 1900) {
             item.classList.remove("hidden");
         }
         setInterval(function() {
-            if(budget < 190) {
+            if(budget < 1900) {
                 item.classList.add("hidden");
             }
         }, 100);
@@ -56,7 +56,7 @@ let doenerclick = function(e){
 }
 
 let minus200 = function(e){
-    budget = budget - 200;
+    budget = budget - 2000;
     budgetcounter.innerHTML = budget;
     budgetprice = budgetprice + 0.3
     price.innerHTML = budgetprice;
@@ -65,21 +65,21 @@ let minus200 = function(e){
 let minus300 = function(e){
     budget = budget - 300;
     budgetcounter.innerHTML = budget;
-    budgetprice = budgetprice + 3
+    budgetprice = budgetprice + 1
     price.innerHTML = budgetprice;
 }
 
 let minus400 = function(e){
     budget = budget - 400;
     budgetcounter.innerHTML = budget;
-    budgetprice = budgetprice + 5
+    budgetprice = budgetprice + 1.5
     price.innerHTML = budgetprice;
 }
 
 let minus500 = function(e){
     budget = budget - 500;
     budgetcounter.innerHTML = budget;
-    budgetprice = budgetprice + 10
+    budgetprice = budgetprice + 2
     price.innerHTML = budgetprice;
 }
 
