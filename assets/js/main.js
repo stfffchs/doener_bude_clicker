@@ -21,11 +21,11 @@ let budgetcount = function() {
 let doenerclick = function(e){
         points = points + 1;
         counter.innerHTML = points;
-        if(budget >= 1900) {
+        if(budget >= 190) {
             item.classList.remove("hidden");
         }
         setInterval(function() {
-            if(budget < 1900) {
+            if(budget < 190) {
                 item.classList.add("hidden");
             }
         }, 100);
