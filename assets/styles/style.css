@@ -68,7 +68,6 @@ animation: shadow-pulse 1s infinite;
     width: 120px;
     float: left;
     margin: 10px;
-    position: absolute;
 }
 
 .hidden {
@@ -94,6 +93,15 @@ body {
     width: 100vw;
     position: fixed;
     bottom:0;s
+    z-index: 200;
+}
+
+.flex2 {
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    bottom:0;s
+    z-index: -100;
 }
 
 
