@@ -21,63 +21,63 @@ let budgetcount = function() {
 let doenerclick = function(e){
         points = points + 1;
         counter.innerHTML = points;
-        if(budget >= 190) {
+        if(budget >= 1190) {
             item.classList.remove("hidden");
         }
         setInterval(function() {
-            if(budget < 190) {
+            if(budget < 1190) {
                 item.classList.add("hidden");
             }
         }, 100);
-        if(budget >= 290) {
+        if(budget >= 3490) {
             item2.classList.remove("hidden");
         }
         setInterval(function() {
-            if(budget < 290) {
+            if(budget < 3490) {
                 item2.classList.add("hidden");
             }
         }, 100);
-        if(budget >= 390) {
+        if(budget >= 4740) {
             item3.classList.remove("hidden");
         }
         setInterval(function() {
-            if(budget < 390) {
+            if(budget < 4740) {
                 item3.classList.add("hidden");
             }
         }, 100);
-        if(budget >= 490) {
+        if(budget >= 18890) {
             item4.classList.remove("hidden");
         }
         setInterval(function() {
-            if(budget < 490) {
+            if(budget < 18890) {
                 item4.classList.add("hidden");
             }
         }, 100);
 }
 
 let minus200 = function(e){
-    budget = budget - 2000;
+    budget = budget - 1200;
     budgetcounter.innerHTML = budget;
     budgetprice = budgetprice + 0.3
     price.innerHTML = budgetprice;
 }
 
 let minus300 = function(e){
-    budget = budget - 300;
+    budget = budget - 3500;
     budgetcounter.innerHTML = budget;
     budgetprice = budgetprice + 1
     price.innerHTML = budgetprice;
 }
 
 let minus400 = function(e){
-    budget = budget - 400;
+    budget = budget - 4750;
     budgetcounter.innerHTML = budget;
     budgetprice = budgetprice + 1.5
     price.innerHTML = budgetprice;
 }
 
 let minus500 = function(e){
-    budget = budget - 500;
+    budget = budget - 18900;
     budgetcounter.innerHTML = budget;
     budgetprice = budgetprice + 2
     price.innerHTML = budgetprice;

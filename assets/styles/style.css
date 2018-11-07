@@ -21,6 +21,13 @@ h2 { text-align: center;
     color: black;
     font-family: 'Roboto';
 }
+
+h3 { text-align: center;
+        font-size: 14px;
+        color: black;
+    }
+
+
 #budgetcounter {
     font-size: 18px;
     text-align: center;
@@ -85,14 +92,17 @@ body {
 
 
 .center {
-    margin: 0 auto;
+        justify-content: center;
+        width: 100%;
 }
 
 .flex {
     display: flex;
     width: 100vw;
     position: fixed;
-    bottom:0;
+    bottom:30px;
+    right: 10px;
+    left: 10px;
     z-index: 200;
 }
 
@@ -100,7 +110,9 @@ body {
     display: flex;
     width: 100vw;
     position: fixed;
-    bottom:0;
+    bottom:30px;
+    right: 10px;
+    left: 10px;
     z-index: -100;
 }
 
