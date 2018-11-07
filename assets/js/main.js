@@ -90,3 +90,13 @@ item2.addEventListener("click", minus300);
 item3.addEventListener("click", minus400);
 item4.addEventListener("click", minus500);
 doener.addEventListener("click", budgetcount);
+
+
+// Stopwatch
+var time = document.getElementsByClassName("stopwatch"),
+c=0, s=0, m=0, io=0, itv=null;
+
+function playPause() {
+    io = !io;
+    return io ? itv = setInterval(count, 300) : clearInterval(itv);
+  }
