@@ -10,7 +10,7 @@ let price = document.getElementById("price")
 var budgetprice = 10
 
 let points = 0;
-let budget = 0;
+let budget = 1;
 
 let budgetcount = function() {
     budget = Math.ceil((budget + budgetprice) * 100)/100
@@ -91,12 +91,46 @@ item3.addEventListener("click", minus400);
 item4.addEventListener("click", minus500);
 doener.addEventListener("click", budgetcount);
 
-
-// Stopwatch
-var time = document.getElementsByClassName("stopwatch"),
+// Stopwatch variables
+let time = document.getElementById("stopwatch"),
 c=0, s=0, m=0, io=0, itv=null;
 
-function playPause() {
-    io = !io;
-    return io ? itv = setInterval(count, 300) : clearInterval(itv);
+// Stopwatch functions
+$("#doener").one("click", timerstart);
+
+function padd(n) { // Zero padd minutes and seconds
+    return n<10 ? "0"+n : n;
   }
+  
+function count() {
+    c = ++c%100;
+    if(!c) {
+        s = ++s%60;
+      if(!s) m=++m%60;
+    }
+    time.innerHTML = padd(m) +":"+ padd(s) +":"+ padd(c);
+  }
+
+  function timerstart() {
+    io = !io;
+    return itv = setInterval(count, 10); 
+}
+
+var miete;
+miete = setInterval(function(){
+    if (s == 3) {
+        budget = budget - 5;
+        budgetcounter.innerHTML = budget;
+        s = 0;
+    }
+}, 1);
+
+var gameoverscreen;
+let gameover = document.getElementById("gameover");
+gameoverscreen = setInterval(function() {
+    if (budget <= 0) {
+        clearInterval(itv);
+        clearInterval(miete);
+        gameover.classList.remove("hidden");
+    }
+}, 1);

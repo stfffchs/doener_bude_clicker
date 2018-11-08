@@ -206,3 +206,21 @@ body {
     box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
   }
 }
+
+#stopwatch {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 900;
+    font-size: 2rem;
+}
+
+#gameover {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: red;
+    z-index: 1000;
+}
