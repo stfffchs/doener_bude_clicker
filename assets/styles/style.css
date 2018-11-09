@@ -216,7 +216,7 @@ body {
 
 #stopwatch {
     position: fixed;
-    justify-content: center;
+    left: 50%;
     z-index: 900;
     font-size: 2rem;
 }
