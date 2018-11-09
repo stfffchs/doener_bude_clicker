@@ -2,6 +2,10 @@
     padding: 0;
 }
 
+* {
+    user-select: none;
+}
+
 body {font-family: 'Luckiest Guy';
     color: white;
 }
