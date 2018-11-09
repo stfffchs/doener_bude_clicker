@@ -119,7 +119,7 @@ function count() {
 var miete;
 miete = setInterval(function(){
     if (s == 59) {
-        budget = budget - 8900;
+        budget = budget - 6000;
         budgetcounter.innerHTML = budget;
         s = 0;
     }
