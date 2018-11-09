@@ -6,10 +6,16 @@
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
-
-  <div class="stopwatch">0</div>
+    
+    <div id="gameover" class="hidden">
+        Hier kommt dein gameover text.
+        <a id="neustart" href="javascript:history.go(0)">Neustart</a>
+    </div>
+  
+    <div id="stopwatch">0</div>
 
   <div class="wrapper">
     <div><div id="doener" class="doener_img"> <img src= "./assets/img/doener.png"> </div>
