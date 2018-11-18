@@ -221,6 +221,16 @@ body {
     font-size: 2rem;
 }
 
+
+#gameover-content {
+    text-align: center;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: calc(50vh - 52px);
+    width: 299px;
+    }
+    
 #gameover {
     position: fixed;
     top: 0px;
@@ -229,4 +239,14 @@ body {
     bottom: 0px;
     background-color: red;
     z-index: 1000;
+}
+
+#restart {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
 }
