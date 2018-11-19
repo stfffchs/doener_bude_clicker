@@ -58,28 +58,28 @@ let doenerclick = function(e){
 let minus200 = function(e){
     budget = budget - 1200;
     budgetcounter.innerHTML = budget;
-    budgetprice = budgetprice + 0.3
+    budgetprice = budgetprice + 1.3
     price.innerHTML = budgetprice;
 }
 
 let minus300 = function(e){
     budget = budget - 3500;
     budgetcounter.innerHTML = budget;
-    budgetprice = budgetprice + 1
+    budgetprice = budgetprice + 2.5
     price.innerHTML = budgetprice;
 }
 
 let minus400 = function(e){
     budget = budget - 4750;
     budgetcounter.innerHTML = budget;
-    budgetprice = budgetprice + 1.5
+    budgetprice = budgetprice + 4
     price.innerHTML = budgetprice;
 }
 
 let minus500 = function(e){
     budget = budget - 18900;
     budgetcounter.innerHTML = budget;
-    budgetprice = budgetprice + 2
+    budgetprice = budgetprice + 10
     price.innerHTML = budgetprice;
 }
 
@@ -119,7 +119,7 @@ function count() {
 var miete;
 miete = setInterval(function(){
     if (s == 59) {
-        budget = budget - 6000;
+        budget = budget - 2300;
         budgetcounter.innerHTML = budget;
         s = 0;
     }
